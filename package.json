@@ -1,0 +1,33 @@
+{
+  "name": "markovjs",
+  "version": "0.1.0-SNAPSHOT",
+  "main": "index.js",
+  "author": "lsunsi",
+  "license": "MIT",
+  "repository": "https://github.com/lsunsi/markovjs.git",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-plugin-transform-flow-strip-types": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.19.0",
+    "babel-preset-latest": "^6.16.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.11.0",
+    "eslint-config-airbnb-base": "^10.0.1",
+    "eslint-plugin-flowtype": "^2.25.0",
+    "eslint-plugin-import": "^2.2.0",
+    "flow-bin": "^0.36.0",
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "build:clean": "rm -rf lib/",
+    "check:style": "eslint ./src",
+    "check:tests": "mocha --compilers js:babel-core/register",
+    "check:types": "flow",
+    "setup": "node setup.js ./lib index memory policies",
+    "setup:clean": "rm index.js memory.js policies.js",
+    "start:dev": "babel-node ./src/index.js"
+  }
+}
