@@ -1,6 +1,6 @@
 {
   "name": "markovjs",
-  "version": "0.1.0-SNAPSHOT",
+  "version": "0.1.0",
   "main": "index.js",
   "author": "lsunsi",
   "license": "MIT",
