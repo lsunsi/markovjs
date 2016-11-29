@@ -51,7 +51,7 @@ markov() // creates an environment
 *sets up the game for the learning environment*
 
 It takes the game **implementation** as its first argument and the game **initial state** as the second one.
-This initial game state is gonna be considered for all game simulations and can only be changed by calling this method again.
+This initial game state will be used in all game simulations and can only be changed by calling this method again.
 
 The game implementation should be implemented by you following this interface:
 
@@ -78,11 +78,11 @@ This is generally all you need to implement in order to use this package.
 ### **.memory** *(memory: Memory<M>, initialMemoryState: M)*
 *sets up the memory for the learning environment*
 
-This method is analogous to `.game`, but for memory.
+This method is analogous to `.game`.
 It takes the memory **implementation** as its first argument and the memory **initial state** as the second one.
 
 This package provides a basic implementation for the memory that can be used out of the box.
-It includes both functions and an extra `init` one, that returns an empty memory state.
+It includes both required functions and an extra `init` one, that returns an empty memory state.
 The `init` function takes a number to be used as the initial value for all unset state-action pairs.
 
 ```javascript
@@ -120,7 +120,7 @@ import * as policies from 'markovjs/policies'
 
 policies.random // always chooses random action
 policies.greedy // always chooses the action with higher expected return
-policies.egreedy(0.1) // acts random with 0.1 chance and greedy with 0.9 change
+policies.egreedy(0.1) // acts random with 0.1 chance and greedy with 0.9 chance
 ```
 
 ###### tips
