@@ -5,13 +5,17 @@
   "author": "lsunsi",
   "license": "MIT",
   "repository": "https://github.com/lsunsi/markovjs.git",
-  "files": ["lib/", "*.js"],
+  "files": [
+    "lib/",
+    "*.js"
+  ],
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-eslint": "^7.1.1",
     "babel-plugin-syntax-flow": "^6.18.0",
     "babel-plugin-transform-flow-strip-types": "^6.18.0",
     "babel-plugin-transform-object-rest-spread": "^6.19.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
     "babel-preset-latest": "^6.16.0",
     "chai": "^3.5.0",
     "eslint": "^3.11.0",
@@ -30,5 +34,8 @@
     "setup": "node setup.js ./lib index memory policies",
     "setup:clean": "rm index.js memory.js policies.js",
     "start:dev": "babel-node ./src/index.js"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.18.0"
   }
 }

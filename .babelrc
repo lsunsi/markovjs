@@ -2,7 +2,8 @@
   "plugins": [
     "syntax-flow",
     "transform-flow-strip-types",
-    "transform-object-rest-spread"
+    "transform-object-rest-spread",
+    "transform-runtime"
   ],
   "presets": [
     "latest"
