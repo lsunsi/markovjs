@@ -1,5 +1,6 @@
 {
   "name": "markovjs",
+  "description": "reinforcement learning in javascript",
   "version": "0.1.2",
   "main": "index.js",
   "author": "lsunsi",
