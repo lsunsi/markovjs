@@ -9,6 +9,19 @@
     "lib/",
     "*.js"
   ],
+  "keywords": [
+    "markov",
+    "machine",
+    "reinforcement",
+    "learning",
+    "value",
+    "iteration",
+    "sarsa",
+    "q-learning"
+  ],
+  "dependencies": {
+    "babel-runtime": "^6.18.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-eslint": "^7.1.1",
@@ -34,8 +47,5 @@
     "setup": "node setup.js ./lib index memory policies",
     "setup:clean": "rm index.js memory.js policies.js",
     "start:dev": "babel-node ./src/index.js"
-  },
-  "dependencies": {
-    "babel-runtime": "^6.18.0"
   }
 }
