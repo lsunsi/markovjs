@@ -2,7 +2,7 @@
 
 ###### npm install markovjs
 
-[![Release](https://img.shields.io/badge/Release-0.1.2-blue.svg?style=flat-square)](https://github.com/lsunsi/markovjs/releases)
+[![Release](https://img.shields.io/badge/Release-0.1.3-blue.svg?style=flat-square)](https://github.com/lsunsi/markovjs/releases)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://github.com/lsunsi/markovjs/blob/master/LICENSE)
 
 This is a reference implementation of a basic reinforcement learning environment.
