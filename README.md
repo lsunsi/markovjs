@@ -71,7 +71,7 @@ This is generally all you need to implement in order to use this package.
 *That's not to say you shouldn't mess around anywhere else if you feel like it.*
 
 ###### tips
-- Need an example? grid-world *(coming soon)* and n-armed-bandit *(coming soon)*
+- Need an example? [grid-world](https://github.com/lsunsi/markovjs-gridworld) and n-armed-bandit *(coming soon)*
 - The way you model your problem affects the agent's ability to learn it. State is what your agent sees and the reward is what it seeks!
 - There might be restraints on your state implementation depending on the memory implementation you use. Check out the memory section for more info
 
@@ -99,8 +99,8 @@ rater(1) // rates G=0 A=1, which gives out 2.1
 This means that for this memory to work correctly, you need to make sure the string returned by `toString` for your game state really represents it.
 
 ###### tips
-- You might have to implement a custom `toString` method for your state type. Need an example? grid-world *(coming soon)*
-- Don't feel like implementing the `toString` method? Check out this memory implementation *(coming soon)*
+- You might have to implement a custom `toString` method for your state type. Need an example? [grid-world](https://github.com/lsunsi/markovjs-gridworld)
+- Don't feel like implementing the `toString` method? Check out [this memory implementation](https://github.com/lsunsi/markovjs-immutable)
 - Most of the heavy work is lifted by the memory. Want to speed things up? Roll up your own faster memory implementation!
 
 ### **.policies** *(move: Policy, learn: Policy = move, play: Policy = learn)*
@@ -225,12 +225,15 @@ export type Learn<A, G, M> = (
 )=> M
 ```
 
-## Coming soon
-- immutable memory implementation
-- grid-world game example
+## What Next
+- [grid-world game example](https://github.com/lsunsi/markovjs-gridworld)
+- [immutable memory implementation](https://github.com/lsunsi/markovjs-immutable)
+
+## Coming Soon
 - n-armed-bandit game example
 - eligibility traces support
 - function approximation support
+
 
 ## Thanks
 Seriously, for reading this whole doc.
